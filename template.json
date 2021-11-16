@@ -1,0 +1,27 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "GsrRegistry": {
+            "Type": "AWS::Glue::Registry",
+            "Properties": {
+                "Description": "Gsr Blog Registry",
+                "Name": "GsrBlogRegistry"
+            }
+        },
+        "GsrSchemaJson": {
+            "Type": "AWS::Glue::Schema",
+            "Properties": {
+                "Compatibility": "BACKWARD",
+                "DataFormat": "JSON",
+                "Name": "GsrBlogSchema",
+                "Registry": {
+                    "Name": "GsrBlogRegistry"
+                },
+                "SchemaDefinition": "{\"$id\":\"https:\/\/example.com\/weather-report.schema.json\",\"$schema\":\"http:\/\/json-schema.org\/draft-07\/schema#\",\"title\":\"WeatherReport\",\"type\":\"object\",\"properties\":{\"location\":{\"type\":\"object\",\"properties\":{\"city\":{\"type\":\"string\",\"description\":\"Name of the city where the weather is being reported.\"},\"state\":{\"type\":\"string\",\"description\":\"Name of the state where the weather is being reported.\"}},\"additionalProperties\":false,\"required\":[\"city\",\"state\"]},\"temperature\":{\"type\":\"integer\",\"description\":\"Temperature in Farenheit.\"},\"timestamp\":{\"description\":\"Timestamp in epoch format at which the weather was noted.\",\"type\":\"integer\"}},\"additionalProperties\":true,\"required\":[\"location\",\"temperature\",\"timestamp\"]}"
+            },
+            "DependsOn": [
+                "GsrRegistry"
+            ]
+        }
+    }
+}
