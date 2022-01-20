@@ -6,7 +6,7 @@ This repository is a companion to the AWS Big Data Blog, located markdown url [h
 
 This repository contains the CloudFormation template and code corresponding to the following illustration.
 
-![Illustration](AWSGlueSchemaRegistryIllustration.jpg)
+![Illustration](illustration.jpg)
 
 ## Security
 
