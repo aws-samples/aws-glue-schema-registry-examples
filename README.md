@@ -1,11 +1,12 @@
-## My Project
+## Evolve JSON schemas in Amazon MSK and Amazon Kinesis Data Streams with the AWS Glue Schema Registry
 
-TODO: Fill this README out!
+This repository is a companion to the AWS Big Data Blog, located markdown url [here](https://aws.amazon.com/blogs/big-data/).
 
-Be sure to:
+## Description
 
-* Change the title in this README
-* Edit your repository description on GitHub
+This repository contains the CloudFormation template and code corresponding to the following illustration.
+
+![Illustration](AWSGlueSchemaRegistryIllustration.jpg)
 
 ## Security
 
