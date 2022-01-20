@@ -1,4 +1,4 @@
-## Evolve JSON schemas in Amazon MSK and Amazon Kinesis Data Streams with the AWS Glue Schema Registry
+## Evolve JSON Schemas in Amazon MSK and Amazon Kinesis Data Streams with the AWS Glue Schema Registry
 
 This repository is a companion to the AWS Big Data Blog, located markdown url [here](https://aws.amazon.com/blogs/big-data/).
 
